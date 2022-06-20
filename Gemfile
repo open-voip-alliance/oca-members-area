@@ -51,6 +51,12 @@ gem "bootsnap", require: false
 # Use devise as authentication framework
 gem "devise"
 
+# Use active admin to create an admin panel to perform easy CRUD operations.
+gem "activeadmin"
+
+# Use SASS as CSS preprocessor
+gem "sassc-rails"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
