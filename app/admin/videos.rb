@@ -7,7 +7,9 @@ ActiveAdmin.register Video do
   index do
     selectable_column
     column :title
-    column {|video| link_to "Watch", video.url }
+    column "Video link" do |video|
+      link_to "Watch", video.url
+    end
     actions
   end
 
